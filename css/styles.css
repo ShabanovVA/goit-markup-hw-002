@@ -1,0 +1,259 @@
+/* цвет основного текста #757575 */
+/* цвет вторичного текста #212121 */
+/* белый #FFFFFF */
+/* цвет акцента #2196F3 */
+/* белый прозрачный в футере rgba(255, 255, 255, 0.6) */
+/* черный в logo #000000 */
+/* вторичный цвет фона #F5F4FA */
+/* основной цвет фона #FFFFFF */
+/* цвет фона героя и футера #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --btn-grey-color: #f5f4fa;
+  --logo-black-color: #000000;
+  --bgc-header-color: #2f303a;
+  --address-footer-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo header */
+.logo-header {
+  color: var(--logo-black-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.web {
+  color: var(--accent-color);
+}
+/* Ховер и фокус работают криво. Что подправить? */
+.logo-header:hover,
+.web:hover {
+  color: var(--logo-black-color);
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Site */
+.site-contacts .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--bgc-header-color);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button.order {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button.order:hover,
+.button.order:focus {
+  color: var(--title-text-color);
+  background-color: var(--btn-grey-color);
+}
+
+/* Advantages */
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.advantages .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Team */
+.team {
+  background-color: var(--btn-grey-color);
+}
+.cooperators .cooperator {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.cooperators .post {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--bgc-header-color);
+}
+
+.logo-footer {
+  color: var(--white-color);
+
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+/* Ховер и фокус работают криво. Что подправить? */
+.logo-footer:hover,
+.web:hover {
+  color: var(--logo-black-color);
+}
+
+.address {
+  color: var(--white-color);
+}
+
+.address-mail,
+.address-tel {
+  color: var(--address-footer-color);
+  text-decoration: none;
+}
+
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover,
+.address-tel:focus {
+  color: var(--logo-black-color);
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color--);
+  background-color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--btn-grey-color);
+}
+
+/* Стили Портфолио */
+.portfolio-title {
+  color: var(--title-text-color);
+}
+/* Меню работ */
+
+.filter-title {
+  color: var(--title-text-color);
+}
+.menu .button:hover,
+.menu .button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+/* Примеры работ */
+/* Почему подчеркивает названия? */
+.list-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.list .name {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+}
