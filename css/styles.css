@@ -47,7 +47,11 @@ body {
 }
 /* Ховер и фокус работают криво. Что подправить? */
 .logo-header:hover,
-.web:hover {
+.logo-header:focus,
+.logo-footer:hover,
+.logo-footer:focus,
+.web:hover,
+.web:focus {
   color: var(--logo-black-color);
 }
 
@@ -189,14 +193,6 @@ body {
   text-decoration: none;
 }
 
-/* Ховер и фокус работают криво. Что подправить? */
-.logo-footer:hover,
-.logo-footer:focus,
-.web:hover,
-.web:focus {
-  color: var(--logo-black-color);
-}
-
 .address {
   color: var(--main-white-color);
 
@@ -266,8 +262,10 @@ body {
   background-color: var(--accent-color);
 }
 /* Примеры работ */
-/* Почему подчеркивает названия? */
 
+.list .link {
+  text-decoration: none;
+}
 .list-title {
   color: var(--title-text-color);
 
@@ -276,7 +274,6 @@ body {
   font-size: 18px;
   line-height: 2px;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 .list .name {
