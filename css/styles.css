@@ -12,7 +12,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
+  --main-white-color: #ffffff;
   --btn-grey-color: #f5f4fa;
   --logo-black-color: #000000;
   --bgc-header-color: #2f303a;
@@ -24,11 +24,6 @@ body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .list {
@@ -44,6 +39,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .web {
@@ -59,6 +55,7 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
 
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,9 +73,10 @@ body {
 }
 
 /* Site */
-.site-contacts .link {
+.header-contacts .link {
   color: var(--primary-text-color);
 
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -86,8 +84,8 @@ body {
   text-decoration: none;
 }
 
-.site-contacts .link:hover,
-.site-contacts .link:focus {
+.header-contacts .link:hover,
+.header-contacts .link:focus {
   color: var(--accent-color);
 }
 
@@ -101,8 +99,9 @@ body {
 }
 
 .hero-title {
-  color: var(--white-color);
+  color: var(--main-white-color);
 
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -111,6 +110,7 @@ body {
   text-transform: uppercase;
 }
 .button.order {
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -130,36 +130,46 @@ body {
 
 .section-title {
   color: var(--title-text-color);
-
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .advantages .title {
   color: var(--title-text-color);
 
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* Team */
 .team {
   background-color: var(--btn-grey-color);
 }
+
 .cooperators .cooperator {
   color: var(--title-text-color);
+
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 .cooperators .post {
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -169,7 +179,7 @@ body {
 }
 
 .logo-footer {
-  color: var(--white-color);
+  color: var(--main-white-color);
 
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -181,17 +191,31 @@ body {
 
 /* Ховер и фокус работают криво. Что подправить? */
 .logo-footer:hover,
-.web:hover {
+.logo-footer:focus,
+.web:hover,
+.web:focus {
   color: var(--logo-black-color);
 }
 
 .address {
-  color: var(--white-color);
+  color: var(--main-white-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .address-mail,
 .address-tel {
   color: var(--address-footer-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -199,27 +223,29 @@ body {
 .address-mail:focus,
 .address-tel:hover,
 .address-tel:focus {
-  color: var(--logo-black-color);
+  color: var(--accent-color);
 }
 
 /* Button */
 .button {
   color: var(--title-text-color--);
-  background-color: var(--white-color);
+  background-color: var(--main-white-color);
   cursor: pointer;
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
 .button.primary {
-  color: var(--white-color);
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 
-.button.secondary {
+.button.portfolio {
   color: var(--title-text-color);
   background-color: var(--btn-grey-color);
 }
@@ -228,21 +254,24 @@ body {
 .portfolio-title {
   color: var(--title-text-color);
 }
+
 /* Меню работ */
 
-.filter-title {
-  color: var(--title-text-color);
+.button .portfoio.current-btn {
+  background-color: var(--accent-color);
 }
 .menu .button:hover,
 .menu .button:focus {
-  color: var(--white-color);
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 /* Примеры работ */
 /* Почему подчеркивает названия? */
+
 .list-title {
   color: var(--title-text-color);
 
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2px;
@@ -253,7 +282,10 @@ body {
 .list .name {
   color: var(--primary-text-color);
 
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
